@@ -16,6 +16,9 @@ const tasks = [
     { text: "Drink some water", done: true }
 ];
 
+let toDos = tasks.filter(element => element.done === false);
+let doneItems = tasks.filter(element => element.done === true);
+
 const App = () => {
     return (
         <div className="app">
@@ -23,9 +26,14 @@ const App = () => {
             <Navigation />
             
             {/* Child Component 2 - ToDosContainer */}
-            <ToDosContainer items={tasks.filter(task => task.done === false)}/>
+            {/* My solution: */}
+            {/* <ToDosContainer items={tasks.filter(task => task.done === false)}/> */}
 
-            <DoneContainer items={tasks.filter(task => task.done === true)}/>
+            {/* <DoneContainer items={tasks.filter(task => task.done === true)}/> */}
+
+            {/* Jamie's solution: */}
+            <ToDosContainer items={toDos}/>
+            <DoneContainer items={doneItems}/>
         </div>
     );
 }
