@@ -23,9 +23,9 @@ const App = () => {
             <Navigation />
             
             {/* Child Component 2 - ToDosContainer */}
-            <ToDosContainer items={tasks.filter(task => task.done == false)}/>
+            <ToDosContainer items={tasks.filter(task => task.done === false)}/>
 
-            <DoneContainer items={tasks.filter(task => task.done == true)}/>
+            <DoneContainer items={tasks.filter(task => task.done === true)}/>
         </div>
     );
 }
