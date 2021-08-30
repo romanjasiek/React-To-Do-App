@@ -1,0 +1,113 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app {
+  height: 100%;
+  padding: 10px;
+  background: #fefefe;
+  color: #555555;
+}
+
+.app .btn {
+    border: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 20px;
+    width: 70px;
+    background: #E9C46A;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.app .btn:focus {
+      outline: none;
+}
+
+.app .btn:hover {
+      opacity: 0.9;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1d2226;
+    min-height: 60px;
+    padding: 10px;
+}
+
+nav a {
+      color: white;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.todos-container {
+    padding: 20px 10px;
+}
+
+.todos-container .todo-form .input-item input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #3c6862;
+    margin-right: 10px;
+    color: white;
+    font-size: 1.2em;
+    min-width: 300px;
+}
+
+.todos-container .todos {
+    padding-top: 30px;
+}
+
+.todos-container .todos .todo-item {
+    padding: 5px 10px;
+    background: #F4A261;
+    color: #555555;
+    margin: 10px 0;
+    border-radius: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.done-container {
+    padding: 10px;
+}
+
+.done-container .done-item {
+    padding: 5px 10px;
+    background: #F4A261;
+    color:#fefefe;
+    margin: 10px 0;
+    border-radius: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.done-container .done-item p {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
